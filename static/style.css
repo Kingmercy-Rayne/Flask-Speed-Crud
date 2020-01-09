@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+li {
+  list-style-type: none;
+}
+body {
+  color: #fff;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapper {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.enlist{
+  background-color: rgb(19, 19, 49);
+  width: 40%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.message {
+  color: red;
+  padding:0 0.5rem;
+  background-color:rgb(51, 48, 48);
+  font-size: 1.2rem;
+  font-style: italic;
+  padding: 1rem;
+}
+input {
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: rgb(43, 43, 85);
+  border: none;
+  border-radius: 5%;
+}
+label {
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+form button {
+  border: none;
+  padding: 1rem;
+  color: #fff;
+  background: none;
+  font-size: 1.5rem;
+  border-radius: 10%;
+  background: linear-gradient(45deg, #1d273f 90%, #ff6961 20%);
+  transition: transform 0.2s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+form button:hover {
+  transform: scale(1.1);
+  animation: buttonGradient 0.2s ease-in-out alternate;
+  background: linear-gradient(225deg, #1d273f 90%, #ff6961 20%);
+}
+@keyframes buttonGradient {
+  0% {
+    background: linear-gradient(45deg, #1d273f 80%, #ff6961 20%);
+  }
+  50% {
+    background: linear-gradient(45deg, #1d273f 40%, #ff6961 20%);
+  }
+  90% {
+    background: linear-gradient(45deg, #1d273f 20%, #ff6961 20%);
+  }
+  100% {
+    background: linear-gradient(45deg, #1d273f 10%, #ff6961 20%);
+  }
+}
+
+.args {
+  font-size: 1.4rem;
+  padding: 2rem;
+  width: 40%;
+  display:flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  border: solid 1px purple;
+  color: #000;
+}
+.stack_block{
+  margin-top:1rem;
+  display:flex;
+  justify-content: space-between;
+}
+.args button {
+  border: solid 2px #333;
+  padding: 0.5rem;
+  color: #fff;
+  background: none;
+  font-size: 0.8rem;
+  border-radius: 15%;
+  background: linear-gradient(45deg, #ff6961 80%, #1d273f 20%);
+  transition: transform 0.2s ease-in-out;
+  outline: none;
+}
+.args button:hover {
+  transform: scale(1.1);
+}
+
+
+@media screen and (max-width:500px){
+  html{
+    font-size:80%;
+    overflow-x:hidden;
+  }
+  .wrapper{
+    flex-direction:column;
+  }
+  form{
+    width:100vw;
+    height:30vh;
+  }
+  .args{
+    width:100%;
+    font-size:0.4rem;
+  }
+}
