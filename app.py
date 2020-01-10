@@ -10,7 +10,7 @@ if ENV == 'dev':
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:schrodinger@localhost/lexus'
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://fxliejydaxfplf:c429674b0c1edd53f77b794885b4201d0f4d1d1b7bba557277933e43459fad85@ec2-174-129-33-13.compute-1.amazonaws.com:5432/db9bvn5l4jctbt'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://dpmslcsuhkmyoe:ce141777c4a9272a5cda043ea6a14dbbf1b8b0f991265acb9bd77cf2f268886f@ec2-174-129-254-217.compute-1.amazonaws.com:5432/d7tciqbm9m17f8'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['TEMPLATES_AUTO_RELOAD'] = True
