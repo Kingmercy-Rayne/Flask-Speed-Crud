@@ -13,7 +13,6 @@ else:
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://dpmslcsuhkmyoe:ce141777c4a9272a5cda043ea6a14dbbf1b8b0f991265acb9bd77cf2f268886f@ec2-174-129-254-217.compute-1.amazonaws.com:5432/d7tciqbm9m17f8'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 db = SQLAlchemy(app)
 
